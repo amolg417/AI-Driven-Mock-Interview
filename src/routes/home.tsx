@@ -1,8 +1,7 @@
-import { Check, Sparkles } from "lucide-react";
+import { Check } from "lucide-react";
 import Marquee from "react-fast-marquee";
 
 import { Container } from "@/components/container";
-import { Button } from "@/components/ui/button";
 import { MarqueImg } from "@/components/marquee-img";
 import { Link } from "react-router-dom";
 import { ArrowRightIcon } from "lucide-react";
