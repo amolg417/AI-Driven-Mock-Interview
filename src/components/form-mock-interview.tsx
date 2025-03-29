@@ -183,9 +183,9 @@ export const FormMockInterview = ({ initialData }: FormMockInterviewProps) => {
         <Headings title={title} isSubHeading />
 
         {initialData && (
-          <Button size={"icon"} variant={"ghost"}>
-            <Trash2 className="min-w-4 min-h-4 text-red-500" />
-          </Button>
+          <button className="h-10 w-10 flex items-center justify-center rounded-lg hover:bg-accent hover:text-accent-foreground">
+            <Trash2 className="w-4 h-4 text-red-500" />
+          </button>
         )}
       </div>
 
@@ -288,17 +288,16 @@ export const FormMockInterview = ({ initialData }: FormMockInterviewProps) => {
           />
 
           <div className="w-full flex items-center justify-end gap-6">
-            <Button
+            <button
               type="reset"
-              size={"sm"}
-              variant={"outline"}
               disabled={isSubmitting || loading}
+              className="h-9 rounded-md px-3 border border-input bg-background hover:bg-accent hover:text-accent-foreground"
             >
               Reset
-            </Button>
-            <Button
+            </button>
+            <button
               type="submit"
-              size={"sm"}
+              className="h-9 rounded-md px-3 bg-primary text-primary-foreground hover:bg-primary/90"
               disabled={isSubmitting || !isValid || loading}
             >
               {loading ? (
@@ -306,7 +305,7 @@ export const FormMockInterview = ({ initialData }: FormMockInterviewProps) => {
               ) : (
                 actions
               )}
-            </Button>
+            </button>
           </div>
         </form>
       </FormProvider>

@@ -33,7 +33,6 @@ export const TooltipButton = ({
   content,
   icon,
   onClick,
-  buttonVariant = "ghost",
   buttonClassName = "",
   delay = 0,
   disbaled = false,
@@ -45,11 +44,9 @@ export const TooltipButton = ({
         <TooltipTrigger
           className={disbaled ? "cursor-not-allowed" : "cursor-pointer"}
         >
-          <Button
-            size={"icon"}
+          <button
             disabled={disbaled}
-            variant={buttonVariant}
-            className={buttonClassName}
+            className={`h-10 w-10 hover:bg-accent hover:text-accent-foreground ${buttonClassName}`}
             onClick={onClick}
           >
             {loading ? (
@@ -57,7 +54,7 @@ export const TooltipButton = ({
             ) : (
               icon
             )}
-          </Button>
+          </button>
         </TooltipTrigger>
         <TooltipContent>
           <p>{loading ? "Loading..." : content}</p>

@@ -22,16 +22,16 @@ export const SaveModal = ({
       onClose={onClose}
     >
       <div className="pt-6 space-x-2 flex items-center justify-end w-full">
-        <Button disabled={loading} variant={"outline"} onClick={onClose}>
+        <button disabled={loading} className="h-10 px-4 py-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground" onClick={onClose}>
           Cancel
-        </Button>
-        <Button
+        </button>
+        <button
           disabled={loading}
-          className="bg-emerald-600 hover:bg-emerald-800"
+          className="bg-emerald-600 hover:bg-emerald-800 bg-primary text-primary-foreground hover:bg-primary/90"
           onClick={onConfirm}
         >
           Continue
-        </Button>
+        </button>
       </div>
     </Modal>
   );

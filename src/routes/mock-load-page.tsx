@@ -64,9 +64,9 @@ export const MockLoadPage = () => {
         />
 
         <Link to={`/generate/interview/${interviewId}/start`}>
-          <Button size={"sm"}>
-            Start <Sparkles />
-          </Button>
+          <button className="flex gap-x-2 items-center h-9 rounded-md px-3 bg-primary text-primary-foreground hover:bg-primary/90">
+            Start <Sparkles className="w-4 h-4"/>
+          </button>
         </Link>
       </div>
 
@@ -106,9 +106,9 @@ export const MockLoadPage = () => {
       </div>
 
       <div className="flex items-center justify-center">
-        <Button onClick={() => setIsWebCamEnabled(!isWebCamEnabled)}>
+        <button onClick={() => setIsWebCamEnabled(!isWebCamEnabled)} className="h-10 px-4 py-2 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90">
           {isWebCamEnabled ? "Disable Webcam" : "Enable Webcam"}
-        </Button>
+        </button>
       </div>
     </div>
   );

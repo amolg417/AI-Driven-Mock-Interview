@@ -58,9 +58,9 @@ export const Dashboard = () => {
           description="Create and start you AI Mock interview"
         />
         <Link to={"/generate/create"}>
-          <Button size={"sm"}>
-            <Plus /> Add New
-          </Button>
+        <button className="!flex !items-center gap-x-2 rounded-md px-3 py-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground">
+        <Plus className="w-4 h-4"  /> Add New
+          </button>
         </Link>
       </div>
 
@@ -94,10 +94,10 @@ export const Dashboard = () => {
             </p>
 
             <Link to={"/generate/create"} className="mt-4">
-              <Button size={"sm"}>
-                <Plus className="min-w-5 min-h-5 mr-1" />
+            <button className="!flex !items-center gap-x-2 rounded-md px-3 py-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground">
+            <Plus className="w-4 h-4" />
                 Add New
-              </Button>
+              </button>
             </Link>
           </div>
         )}
