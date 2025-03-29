@@ -1,6 +1,5 @@
 import { Headings } from "@/components/headings";
 import { InterviewPin } from "@/components/pin";
-import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Skeleton } from "@/components/ui/skeleton";
 import { db } from "@/config/firebase.config";
