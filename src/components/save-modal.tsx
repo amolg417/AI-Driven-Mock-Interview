@@ -1,5 +1,4 @@
 import Modal from "./modal";
-import { Button } from "./ui/button";
 
 interface SaveModalProps {
   isOpen: boolean;

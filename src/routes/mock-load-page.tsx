@@ -84,7 +84,7 @@ export const MockLoadPage = () => {
             receive a personalized report based on your responses at the end.{" "}
             <br />
             <br />
-            <span className="font-medium">Note:</span> Your video is{" "}
+            <span className="font-medium">Note: </span> Your video is{" "}
             <strong>never recorded</strong>. You can disable your webcam at any
             time.
           </AlertDescription>

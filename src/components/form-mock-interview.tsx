@@ -10,7 +10,6 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "@clerk/clerk-react";
 import { toast } from "sonner";
 import { Headings } from "./headings";
-import { Button } from "./ui/button";
 import { Loader, Trash2 } from "lucide-react";
 import { Separator } from "./ui/separator";
 import {
